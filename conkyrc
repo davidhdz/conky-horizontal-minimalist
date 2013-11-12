@@ -1,0 +1,46 @@
+alignment bm
+
+cpu_avg_samples 1
+net_avg_samples 1
+update_interval 1
+
+default_color white
+default_outline_color white
+default_shade_color white
+color2 gray50
+ 
+draw_borders no
+draw_shades no
+draw_graph_borders no
+draw_outline no
+
+border_width 0
+
+gap_x 0
+gap_y 0
+
+
+use_xft yes
+xftfont monospace-9
+xftalpha 0.8
+
+own_window yes
+own_window_class Conky
+own_window_type normal
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual yes
+
+
+use_spacer left
+double_buffer yes
+no_buffers no
+
+total_run_times 0
+background yes
+
+lua_load ~/conky/draw_bg.lua
+lua_draw_hook_pre draw_bg
+
+TEXT 
+${color2}up: ${color}$uptime  ${color2}cpu1: ${color}${cpu cpu1}%  ${color2}cpu2: ${color}${cpu cpu2}%  ${color2}Frec: ${color}${freq_g} Ghz  ${color2}Tcpu: ${color}${acpitemp}°C  ${color2}Thdd:${color}${hddtemp /dev/sda}°C  ${color2}ram: ${color} $memperc%  ${color2}swap: ${color}$swapperc%  ${if_existing /proc/net/route eth0} ${color2}ip: ${color}${addr eth0}  ${color2}net: dn${color} ${downspeed eth0} ${color2}up${color} ${upspeed eth0}${else}${if_up eth1}${color2}ip: ${color}${addr eth1}  ${color2}net: dn${color} ${downspeed eth1} ${color2}up${color} ${upspeed eth1}${else}${if_up wlan0}${color2}ip: ${color}${addr wlan0}  ${color2}net: dn${color} ${downspeed wlan0} ${color2}up${color} ${upspeed wlan0}${endif}
