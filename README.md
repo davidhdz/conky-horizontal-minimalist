@@ -13,7 +13,7 @@ Notes
 -----
 * Information of wired connections has priority over wireless when both are connected.
 * Change name of your nets interface in `.conkyrc`
-* Uses lm-sensors
+* Uses lm-sensors for temperature measuring
 * Uses lua for semitransparency background
 * Using since Ubuntu 9.10 
 * Last tested on Ubuntu Gnome 13.10

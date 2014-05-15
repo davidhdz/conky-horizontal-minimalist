@@ -39,7 +39,7 @@ no_buffers no
 total_run_times 0
 background yes
 
-lua_load ~/conky/draw_bg.lua
+lua_load ~/.conky/draw_bg.lua
 lua_draw_hook_pre draw_bg
 
 TEXT 
