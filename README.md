@@ -1,6 +1,6 @@
 Conky Horizontal Minimalist
 ===========================
-A minimalist horizontal config file for conky
+A minimalist horizontal config file for conky 1.9.0
 
 ----
 
