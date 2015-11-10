@@ -1,6 +1,8 @@
 Conky Horizontal Minimalist
 ===========================
 A minimalist horizontal config file for conky 1.10.0
+</br>
+For conky v1.9 go to [Release v1.9.0](https://github.com/davidhdz/conky-horizontal-minimalist/releases/tag/v1.9.0)
 
 ----
 
