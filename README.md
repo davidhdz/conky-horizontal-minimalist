@@ -18,7 +18,7 @@ Notes
 * Require `lm-sensors` and `hddtemp` for temperature measuring
 * Uses lua for semitransparency background
 * Using since Ubuntu 9.10 
-* Last tested on Ubuntu Gnome 15.10, Ubuntu 15.10
+* Last tested on Ubuntu Gnome 16.04, Ubuntu 16.04
 <br/>
 
 Screenshots
